@@ -1,0 +1,38 @@
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root variables */
+:root {
+    --primary-color: #FF4F81;
+    --secondary-color: #2ecc71;
+    --font-family: 'Roboto', sans-serif;
+    --spacing: 8px 16px;
+}
+
+/* Common styles */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333;
+    scrollbar-width: none;
+    /* Hides scrollbar for Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar for WebKit browsers like Chrome, Safari */
+
+}

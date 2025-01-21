@@ -1,0 +1,64 @@
+/* Custom fonts */
+@font-face {
+    font-family: 'RedBright';
+    src: url("./RedBright.otf");
+}
+
+
+/* madetoomy  fonts  */
+
+
+@font-face {
+    font-family: 'Black_PERSONAL';
+    src: url("./MADE_TOMMY/Black_PERSONAL.otf");
+}
+
+@font-face {
+    font-family: 'BlackOutline';
+    src: url("./MADE_TOMMY/BlackOutline.otf");
+}
+
+@font-face {
+    font-family: 'Bold_PERSONAL';
+    src: url("./MADE_TOMMY/Bold_PERSONAL.otf");
+}
+
+@font-face {
+    font-family: 'ExtraBold_PERSONAl';
+    src: url("./MADE_TOMMY/ExtraBold_PERSONAl.otf");
+}
+
+@font-face {
+    font-family: 'ExtraBoldOutline_PERSONAl';
+    src: url("./MADE_TOMMY/ExtraBoldOutline_PERSONAl.otf");
+}
+
+@font-face {
+    font-family: 'LightOutline_PERSONAL';
+    src: url("./MADE_TOMMY/LightOutline_PERSONAL.otf");
+}
+
+@font-face {
+    font-family: 'Light_PERSONAL';
+    src: url("./MADE_TOMMY/Light_PERSONAL.otf");
+}
+
+@font-face {
+    font-family: 'Medium_PERSONAL';
+    src: url("./MADE_TOMMY/Medium_PERSONAL.otf");
+}
+
+@font-face {
+    font-family: 'MediumOutline_PERSONAL';
+    src: url("./MADE_TOMMY/MediumOutline_PERSONAL.otf");
+}
+
+@font-face {
+    font-family: 'Regular_PERSONAL';
+    src: url("./MADE_TOMMY/Regular_PERSONAL.otf");
+}
+
+@font-face {
+    font-family: 'RegularOutline_PERSONAL';
+    src: url("./MADE_TOMMY/RegularOutline_PERSONAL.otf");
+}
