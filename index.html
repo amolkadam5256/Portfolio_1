@@ -33,67 +33,122 @@
     <!-- adding icon cdn  -->
     <script src="https://kit.fontawesome.com/409c371b1b.js"></script>
 
-    <link rel="stylesheet" href="./CSS/style.css.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./Fonts/font.css">
 </head>
 
 <body>
     <div class="main-container bg-black text-white">
 
-        <header class="block fixed bg-white text-black p-3 m-3 rounded-[8px]">
+        <!-- navigation bar  -->
+
+        <header id="navigation" class="block fixed bg-white  text-black pt-0 p-3 m-5 rounded-[7px] ">
             <!-- component -->
             <nav>
-                <div class="manu-icon bg-black">
+
+                <div id="menu-icon"
+                    class="inline-flex flex-col items-start justify-start cursor-pointer space-y-1 group  "
+                    onclick="toggleChange()">
+                    <!-- Bar 1 -->
+                    <div
+                        class="w-[30px] h-[5px] bg-black transition-transform duration-400 group-[.change]:translate-y-[10px] group-[.change]:-rotate-45 rounded-[20px] ">
+                    </div>
+                    <!-- Bar 2 -->
+                    <div
+                        class="w-[25px] h-[5px] bg-black transition-opacity duration-400 group-[.change]:opacity-0 rounded-[20px]">
+                    </div>
+                    <!-- Bar 3 -->
+                    <div
+                        class="w-[20px] h-[5px]  bg-black transition-transform duration-400 group-[.change]:-translate-y-[10px] group-[.change]:rotate-45 group-[.change]:w-[30px] rounded-[20px]">
+                    </div>
+                </div>
+
+
+                <div class="hidden mt-10 mb-5 h-full" id="manu-content">
+                    <ul>
+                        <li class="py-2 px-2 my-2 bg-gray-200 rounded-[10px]">
+                            <a href="./index.html">
+                                <span class="Nav-icon text-[1.5rem] pr-3">
+                                    <i class="fa-solid fa-house-chimney text-blue-500"></i>
+                                </span>
+                                <span class="Nav-content text-2xl">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2 px-2 my-2 bg-gray-200 rounded-[10px]">
+                            <a href="./pages/About.html">
+                                <span class="Nav-icon text-[1.5rem] pr-3">
+                                    <i class="fa-solid fa-user text-blue-500"></i>
+                                </span>
+                                <span class="Nav-content text-2xl">About</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2 px-2 my-2 bg-gray-200 rounded-[10px]">
+                            <a href="./pages/Resume.html">
+                                <span class="Nav-icon text-[1.5rem] pr-3">
+                                    <i class="fa-solid fa-file-lines text-blue-500"></i>
+                                </span>
+                                <span class="Nav-content text-2xl">Resume</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2 px-2 my-2 bg-gray-200 rounded-[10px]">
+                            <a href="./pages/Certifications.html">
+                                <span class="Nav-icon text-[1.5rem] pr-3">
+                                    <i class="fa-solid fa-certificate text-blue-500"></i>
+                                </span>
+                                <span class="Nav-content text-2xl">Certifications</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2 px-2 my-2 bg-gray-200 rounded-[10px]">
+                            <a href="./pages/Projects.html">
+                                <span class="Nav-icon text-[1.5rem] pr-3">
+                                    <i class="fa-solid fa-briefcase text-blue-500"></i>
+                                </span>
+                                <span class="Nav-content text-2xl">Projects</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2 px-2 my-2 bg-gray-200 rounded-[10px]">
+                            <a href="./pages/Gallery.html">
+                                <span class="Nav-icon text-[1.5rem] pr-3">
+                                    <i class="fa-solid fa-image text-blue-500"></i>
+                                </span>
+                                <span class="Nav-content text-2xl">Gallery</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2 px-2 my-2 bg-gray-200 rounded-[10px]">
+                            <a href="./pages/Blogs.html">
+                                <span class="Nav-icon text-[1.5rem] pr-3">
+                                    <i class="fa-solid fa-blog text-blue-500"></i>
+                                </span>
+                                <span class="Nav-content text-2xl">Blogs</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2 px-2 my-2 bg-gray-200 rounded-[10px]">
+                            <a href="./pages/Contact.html">
+                                <span class="Nav-icon text-[1.5rem] pr-3">
+                                    <i class="fa-solid fa-phone text-blue-500"></i>
+                                </span>
+                                <span class="Nav-content text-2xl">Contact</span>
+                            </a>
+                        </li>
+
+                        <li class="py-2 px-2 my-2 bg-gray-200 rounded-[10px]">
+                            <a href="./pages/Contact.html">
+                                <span class="Nav-icon text-[1.5rem] pr-3">
+                                    <i class="fa-solid fa-user text-blue-500"></i>
+                                </span>
+                                <span class="Nav-content text-2xl">MyProfile</span>
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
-                <div class="logo">
-                    <h1>AMOL</h1>
-                </div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span class="Nav-icon"><i class="fa-solid fa-house-chimney"></i></span>
-                            <span class="Nav-content">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="Nav-icon"><i class="fa-solid fa-house-chimney"></i></span>
-                            <span class="Nav-content">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="Nav-icon"><i class="fa-solid fa-house-chimney"></i></span>
-                            <span class="Nav-content">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="Nav-icon"><i class="fa-solid fa-house-chimney"></i></span>
-                            <span class="Nav-content">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="Nav-icon"><i class="fa-solid fa-house-chimney"></i></span>
-                            <span class="Nav-content">Home</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <span class="Nav-icon"><i class="fa-solid fa-house-chimney"></i></span>
-                            <span class="Nav-content">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="Nav-icon"><i class="fa-solid fa-house-chimney"></i></span>
-                            <span class="Nav-content">Home</span>
-                        </a>
-                    </li>
-                </ul>
             </nav>
         </header>
 
@@ -154,7 +209,7 @@
         </main>
 
         <!--  Script js  -->
-        <script src="./JS/script.js"></script>
+        <script src="./js/navbar.js"></script>
 
     </div>
 </body>
